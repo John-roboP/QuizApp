@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.t_robop.otaka.quizapp.QuizActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q1:テストテスト"
+        android:id="@+id/textQuestion"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp"
+        android:textSize="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Abutton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="A"
+        android:onClick="Abutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:id="@+id/Bbutton"
+        android:layout_below="@+id/Abutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="Bbutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:id="@+id/Cbutton"
+        android:layout_below="@+id/Bbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="Cbutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:id="@+id/Dbutton"
+        android:layout_below="@+id/Cbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="Dbutton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回答A"
+        android:id="@+id/textAnsA"
+        android:layout_above="@+id/Bbutton"
+        android:layout_toRightOf="@+id/Abutton"
+        android:layout_toEndOf="@+id/Abutton"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回答B"
+        android:id="@+id/textAnsB"
+        android:layout_above="@+id/Cbutton"
+        android:layout_alignLeft="@+id/textAnsA"
+        android:layout_alignStart="@+id/textAnsA"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回答C"
+        android:id="@+id/textAnsC"
+        android:layout_above="@+id/Dbutton"
+        android:layout_alignLeft="@+id/textAnsB"
+        android:layout_alignStart="@+id/textAnsB"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回答D"
+        android:id="@+id/textAnsD"
+        android:layout_alignBottom="@+id/Dbutton"
+        android:layout_toRightOf="@+id/Dbutton"
+        android:layout_toEndOf="@+id/Dbutton"
+        android:textSize="30dp" />
+</RelativeLayout>
