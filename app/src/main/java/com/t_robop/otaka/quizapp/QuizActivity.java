@@ -5,11 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
+//Q1画面
 public class QuizActivity extends AppCompatActivity {
 
     TextView tvQ,tvA,tvB,tvC,tvD;
-    int clear;
+    int clear; //正解か不正解か
+    int sum; //合計点
 
 
     @Override
@@ -23,43 +24,102 @@ public class QuizActivity extends AppCompatActivity {
         tvD=(TextView) findViewById(R.id.textAnsD);  //回答D
     }
     public void Abutton(View view){//正解
+        //Aボタン
         clear=1;//正解は1
+        sum+=1;
         if(clear==0){
             tvA.setText("不正解");
-        }else{
-            tvA.setText("正解");
-            Intent answer = new Intent();   //result画面に変遷
+            Intent qtwo = new Intent();   //Q2画面に変遷
 
-            answer.putExtra("test", clear);
-            answer.setClass(this,ResultActivity.class);
+            qtwo.putExtra("test", sum);
+            qtwo.setClass(this, Quiz2Activity.class);
 
 
             // SubActivity の起動
-            startActivity(answer);
+            startActivity(qtwo);
+
+        }else{
+            tvA.setText("正解");
+            Intent qtwo = new Intent();   //Q2画面に変遷
+
+            qtwo.putExtra("test", sum);
+            qtwo.setClass(this, Quiz2Activity.class);
+
+
+            // SubActivity の起動
+            startActivity(qtwo);
         }
 
     }
-    public void Bbutton(View view){
+    public void Bbutton(View view){//Bボタン
         if(clear==0){
-            tvA.setText("不正解");
+            tvB.setText("不正解");
+            Intent qtwo = new Intent();   //Q2画面に変遷
+
+            qtwo.putExtra("test", sum);
+            qtwo.setClass(this, Quiz2Activity.class);
+
+
+            // SubActivity の起動
+            startActivity(qtwo);
         }else{
-            tvA.setText("正解");
+            tvB.setText("正解");
+            Intent qtwo = new Intent();   //Q2画面に変遷
+
+            qtwo.putExtra("test", sum);
+            qtwo.setClass(this, Quiz2Activity.class);
+
+
+            // SubActivity の起動
+            startActivity(qtwo);
         }
 
     }
-    public void Cbutton(View view){
+    public void Cbutton(View view){//Cボタン
         if(clear==0){
-            tvA.setText("不正解");
+            tvC.setText("不正解");
+            Intent qtwo = new Intent();   //Q2画面に変遷
+
+            qtwo.putExtra("test", sum);
+            qtwo.setClass(this, Quiz2Activity.class);
+
+
+            // SubActivity の起動
+            startActivity(qtwo);
         }else{
-            tvA.setText("正解");
+            tvC.setText("正解");
+            Intent qtwo = new Intent();   //Q2画面に変遷
+
+            qtwo.putExtra("test", sum);
+            qtwo.setClass(this, Quiz2Activity.class);
+
+
+            // SubActivity の起動
+            startActivity(qtwo);
         }
 
     }
-    public void Dbutton(View view){
+    public void Dbutton(View view){//Dボタン
         if(clear==0){
-            tvA.setText("不正解");
+            tvD.setText("不正解");
+            Intent qtwo = new Intent();   //Q2画面に変遷
+
+            qtwo.putExtra("test", sum);
+            qtwo.setClass(this, Quiz2Activity.class);
+
+
+            // SubActivity の起動
+            startActivity(qtwo);
         }else{
-            tvA.setText("正解");
+            tvD.setText("正解");
+            Intent qtwo = new Intent();   //Q2画面に変遷
+
+            qtwo.putExtra("test", sum);
+            qtwo.setClass(this, Quiz2Activity.class);
+
+
+            // SubActivity の起動
+            startActivity(qtwo);
         }
 
     }
