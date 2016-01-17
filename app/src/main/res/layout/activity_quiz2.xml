@@ -25,7 +25,8 @@
         android:id="@+id/Q2A"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="Q2Abutton" />
 
     <Button
         android:layout_width="wrap_content"
@@ -34,7 +35,8 @@
         android:id="@+id/Q2B"
         android:layout_below="@+id/Q2A"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="Q2Bbutton" />
 
     <Button
         android:layout_width="wrap_content"
@@ -43,7 +45,8 @@
         android:id="@+id/Q2C"
         android:layout_below="@+id/Q2B"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="Q2Cbutton" />
 
     <Button
         android:layout_width="wrap_content"
@@ -52,7 +55,8 @@
         android:id="@+id/Q2D"
         android:layout_below="@+id/Q2C"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="Q2Dbutton" />
 
     <TextView
         android:layout_width="wrap_content"

@@ -24,20 +24,20 @@ int clear;
 
         sum=keyint;//sumに値を戻す
 
-        tvQ= (TextView) findViewById(R.id.textQuestion);        //問題文
-        tvA= (TextView) findViewById(R.id.textQuestion);        //問題文
-        tvB= (TextView) findViewById(R.id.textQuestion);        //問題文
-        tvC= (TextView) findViewById(R.id.textQuestion);        //問題文
-        tvD=  (TextView) findViewById(R.id.textQuestion);        //問題文
+        tvQ= (TextView) findViewById(R.id.textV2);        //問題文
+        tvA= (TextView) findViewById(R.id.q2tvA);        //問題文
+        tvB= (TextView) findViewById(R.id.q2tvB);        //問題文
+        tvC= (TextView) findViewById(R.id.q2tvC);        //問題文
+        tvD=  (TextView) findViewById(R.id.q2tvD);        //問題文
     }
-    public void Abutton(View view){//
+    public void Q2Abutton(View view){//
         //Aボタン
 
         if(clear==0){
             tvA.setText("不正解");
             Intent result = new Intent();   //result画面に変遷
 
-            result.putExtra("test", sum);
+            result.putExtra("test2", sum);
             result.setClass(this, ResultActivity.class);
 
 
@@ -48,7 +48,7 @@ int clear;
             tvA.setText("正解");
             Intent result = new Intent();   //result画面に変遷
 
-            result.putExtra("test", sum);
+            result.putExtra("test2", sum);
             result.setClass(this, ResultActivity.class);
 
 
@@ -57,7 +57,7 @@ int clear;
         }
 
     }
-    public void Bbutton(View view){ //Q2はBが正解
+    public void Q2Bbutton(View view){ //Q2はBが正解
     //Bボタン
         clear=1;
         sum+=1;
@@ -65,7 +65,7 @@ int clear;
             tvB.setText("不正解");
             Intent result = new Intent();   //result画面に変遷
 
-            result.putExtra("test", sum);
+            result.putExtra("test2", sum);
             result.setClass(this, ResultActivity.class);
 
 
@@ -75,7 +75,7 @@ int clear;
             tvB.setText("正解");
             Intent result = new Intent();   //result画面に変遷
 
-            result.putExtra("test", sum);
+            result.putExtra("test2", sum);
             result.setClass(this, ResultActivity.class);
 
 
@@ -84,12 +84,12 @@ int clear;
         }
 
     }
-    public void Cbutton(View view){//Cボタン
+    public void Q2Cbutton(View view){//Cボタン
         if(clear==0){
             tvC.setText("不正解");
             Intent result = new Intent();   //result画面に変遷
 
-            result.putExtra("test", sum);
+            result.putExtra("test2", sum);
             result.setClass(this, ResultActivity.class);
 
 
@@ -99,7 +99,7 @@ int clear;
             tvC.setText("正解");
             Intent result = new Intent();   //result画面に変遷
 
-            result.putExtra("test", sum);
+            result.putExtra("test2", sum);
             result.setClass(this, ResultActivity.class);
 
 
@@ -108,12 +108,12 @@ int clear;
         }
 
     }
-    public void Dbutton(View view){//Dボタン
+    public void Q2Dbutton(View view){//Dボタン
         if(clear==0){
             tvD.setText("不正解");
             Intent result = new Intent();   //result画面に変遷
 
-            result.putExtra("test", sum);
+            result.putExtra("test2", sum);
             result.setClass(this, ResultActivity.class);
 
 
@@ -123,7 +123,7 @@ int clear;
             tvD.setText("正解");
             Intent result = new Intent();   //result画面に変遷
 
-            result.putExtra("test", sum);
+            result.putExtra("test2", sum);
             result.setClass(this, ResultActivity.class);
 
 

@@ -9,4 +9,45 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.t_robop.otaka.quizapp.ResultActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最終結果"
+        android:id="@+id/Rtv"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正答数"
+        android:layout_below="@+id/Rtv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="109dp"
+        android:textSize="30dp"
+        android:id="@+id/tvK" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textvsum"
+        android:textSize="60dp"
+        android:layout_alignBottom="@+id/tvK"
+        android:layout_alignLeft="@+id/Rtv"
+        android:layout_alignStart="@+id/Rtv" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="スタート画面へ"
+        android:id="@+id/Bfinish"
+        android:layout_marginBottom="97dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/Rtv"
+        android:layout_alignEnd="@+id/Rtv"
+        android:onClick="finish" />
 </RelativeLayout>
