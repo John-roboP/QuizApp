@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Q1:テストテスト"
+        android:text="Q1:docomoの簡易版顧客情報システムの名称は？"
         android:id="@+id/textQuestion"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -63,7 +63,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="回答A"
+        android:text="Rapid α"
         android:id="@+id/textAnsA"
         android:layout_above="@+id/Bbutton"
         android:layout_toRightOf="@+id/Abutton"
@@ -73,7 +73,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="回答B"
+        android:text="orange"
         android:id="@+id/textAnsB"
         android:layout_above="@+id/Cbutton"
         android:layout_alignLeft="@+id/textAnsA"
@@ -83,7 +83,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="回答C"
+        android:text="GINIE"
         android:id="@+id/textAnsC"
         android:layout_above="@+id/Dbutton"
         android:layout_alignLeft="@+id/textAnsB"
@@ -93,7 +93,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="回答D"
+        android:text="ALADIN"
         android:id="@+id/textAnsD"
         android:layout_alignBottom="@+id/Dbutton"
         android:layout_toRightOf="@+id/Dbutton"

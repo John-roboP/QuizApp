@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Q2:テストテストテスト"
+        android:text="Q2:KDDI株式会社の社長の名前は？"
         android:id="@+id/textV2"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -61,7 +61,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="回答A"
+        android:text="孫正義"
         android:id="@+id/q2tvA"
         android:layout_above="@+id/Q2B"
         android:layout_toRightOf="@+id/Q2A"
@@ -71,7 +71,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="回答B"
+        android:text="田中孝司"
         android:layout_above="@+id/Q2C"
         android:layout_toRightOf="@+id/Q2B"
         android:layout_toEndOf="@+id/Q2B"
@@ -81,7 +81,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="回答C"
+        android:text="加藤薫"
         android:id="@+id/q2tvC"
         android:layout_above="@+id/Q2D"
         android:layout_toRightOf="@+id/Q2C"
@@ -91,7 +91,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="回答D"
+        android:text="エリック・ガン"
         android:id="@+id/q2tvD"
         android:layout_alignBottom="@+id/Q2D"
         android:layout_toRightOf="@+id/Q2D"
